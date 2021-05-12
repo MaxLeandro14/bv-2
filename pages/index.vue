@@ -1,89 +1,727 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <div class="text-center">
-        <logo />
-        <vuetify-logo />
-      </div>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              documentation
-            </a>.
-          </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="chat"
-            >
-              discord
-            </a>.
-          </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="contribute"
-            >
-              issue board
-            </a>.
-          </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
+<v-container>
+  <v-row>
+    <!---->
+    <v-col md="4">
+      
+        <v-card
+          class="mx-auto"
+          max-width="320"
+        >
+          <v-img
+            height="200"
+            src="https://i.pinimg.com/originals/d9/f1/5e/d9f15e78f0ac37de87d9b95b545ed03d.jpg"
+          >
+          </v-img>
+          <div class="back-pacote-cinza">
+            <v-row>
+              <div class="col-12">
+                <div class="d-flex align-center justify-space-between">
+                  <span class="pacote-data-principal">
+                    <span class="pacote-data-prox">Próxima Data:</span><br>
+                    2 maio
+                  </span>
+                  <v-btn
+                 
+                    outlined
+                    fab
+                    color="teal"
+                    
+                  >
+                    <v-icon>mdi-playlist-plus</v-icon>
+                  </v-btn>
+                </div>
+              </div>
+            </v-row>
           </div>
-          <hr class="my-3">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt Documentation
-          </a>
-          <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/inspire"
-          >
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
+          <v-card-text>
+            <v-row>
+              <div class="col-12">
+                <p class="pacote-p pacote-title">Santo Amaro</p>
+                <p class="pacote-p pacote-sub">Saindo de <span class="pacote-cidade">São Luís</span></p>
+              </div>
+            </v-row>
+            <v-row>
+              <div class="col-12">
+                <ul class="pacote-list-itens" >
+                  <li>
+                    <span><v-icon class="icon-color">mdi-clock</v-icon></span>
+                    1 Dia
+                  </li>
+                  <li>
+                    <span><v-icon class="icon-color">mdi-clock</v-icon></span>
+                    1 Dia
+                  </li>
+                  <li>
+                    <span><v-icon class="icon-color">mdi-clock</v-icon></span>
+                    1 Dia
+                  </li>
+                </ul>
+              </div>
+            </v-row>
+            <v-row>
+              
+            </v-row>
+            <v-row>
+              
+              <div class="col-6 d-flex pacote-preco" style="flex-direction: column; justify-content: center;">
+                <span class="pacote-preco-item">Individual<br><span class="pacote-preco-tipo"><span class="pacote-preco-moeda">R$</span> 2900</span></span>
+                <span class="pacote-preco-item">Casadinha<br><span class="pacote-preco-tipo"><span class="pacote-preco-moeda">R$</span> 2900</span></span>
+              </div>
+              <div class="col-6 d-flex align-center" style="flex-direction: column; justify-content: center;">
+
+                <v-btn
+                 
+                  class="btn-roteiro"
+                  color="color-roteiro"
+                  @click="openRoteiro('<h1>Carolina</h1>')"
+                >
+                  Descrição
+                  <v-icon right>
+                    mdi-palm-tree
+                  </v-icon>
+                </v-btn>
+
+                <v-btn
+               
+                  color="success"
+                  class="btn-roteiro"
+                >
+                  Whatsapp
+                </v-btn>
+              
+              </div>
+            </v-row>
+            
+           </v-card-text>
+
+        </v-card>
+      
     </v-col>
+    <!-- -->
+    <!---->
+    <v-col md="4">
+      
+        <v-card
+          class="mx-auto"
+          max-width="320"
+        >
+          <v-img
+            height="200"
+            src="https://i.pinimg.com/originals/d9/f1/5e/d9f15e78f0ac37de87d9b95b545ed03d.jpg"
+          >
+          </v-img>
+          <div class="back-pacote-cinza">
+            <v-row>
+              <div class="col-12">
+                <div class="d-flex align-center justify-space-between">
+                  <span class="pacote-data-principal">
+                    <span class="pacote-data-prox">Próxima Data:</span><br>
+                    2 maio
+                  </span>
+                  <v-btn
+                 
+                    outlined
+                    fab
+                    color="teal"
+                    
+                  >
+                    <v-icon>mdi-playlist-plus</v-icon>
+                  </v-btn>
+                </div>
+              </div>
+            </v-row>
+          </div>
+          <v-card-text>
+            <v-row>
+              <div class="col-12">
+                <p class="pacote-p pacote-title">Santo Amaro</p>
+                <p class="pacote-p pacote-sub">Saindo de <span class="pacote-cidade">São Luís</span></p>
+              </div>
+            </v-row>
+            <v-row>
+              <div class="col-12">
+                <ul class="pacote-list-itens" >
+                  <li>
+                    <span><v-icon class="icon-color">mdi-clock</v-icon></span>
+                    1 Dia
+                  </li>
+                  <li>
+                    <span><v-icon class="icon-color">mdi-clock</v-icon></span>
+                    1 Dia
+                  </li>
+                  <li>
+                    <span><v-icon class="icon-color">mdi-clock</v-icon></span>
+                    1 Dia
+                  </li>
+                </ul>
+              </div>
+            </v-row>
+            <v-row>
+              
+            </v-row>
+            <v-row>
+              
+              <div class="col-6 d-flex pacote-preco" style="flex-direction: column; justify-content: center;">
+                <span class="pacote-preco-item">Individual<br><span class="pacote-preco-tipo"><span class="pacote-preco-moeda">R$</span> 2900</span></span>
+                <span class="pacote-preco-item">Casadinha<br><span class="pacote-preco-tipo"><span class="pacote-preco-moeda">R$</span> 2900</span></span>
+              </div>
+              <div class="col-6 d-flex align-center" style="flex-direction: column; justify-content: center;">
+
+                <v-btn
+                 
+                  class="btn-roteiro"
+                  color="color-roteiro"
+                  @click="openRoteiro('<h1>Carolina</h1>')"
+                >
+                  Descrição
+                  <v-icon right>
+                    mdi-palm-tree
+                  </v-icon>
+                </v-btn>
+
+                <v-btn
+               
+                  color="success"
+                  class="btn-roteiro"
+                >
+                  Whatsapp
+                </v-btn>
+              
+              </div>
+            </v-row>
+            
+           </v-card-text>
+
+        </v-card>
+      
+    </v-col>
+    <!-- -->
+    <!---->
+    <v-col md="4">
+      
+        <v-card
+          class="mx-auto"
+          max-width="320"
+        >
+          <v-img
+            height="200"
+            src="https://i.pinimg.com/originals/d9/f1/5e/d9f15e78f0ac37de87d9b95b545ed03d.jpg"
+          >
+          </v-img>
+          <div class="back-pacote-cinza">
+            <v-row>
+              <div class="col-12">
+                <div class="d-flex align-center justify-space-between">
+                  <span class="pacote-data-principal">
+                    <span class="pacote-data-prox">Próxima Data:</span><br>
+                    2 maio
+                  </span>
+                  <v-btn
+                 
+                    outlined
+                    fab
+                    color="teal"
+                    
+                  >
+                    <v-icon>mdi-playlist-plus</v-icon>
+                  </v-btn>
+                </div>
+              </div>
+            </v-row>
+          </div>
+          <v-card-text>
+            <v-row>
+              <div class="col-12">
+                <p class="pacote-p pacote-title">Santo Amaro</p>
+                <p class="pacote-p pacote-sub">Saindo de <span class="pacote-cidade">São Luís</span></p>
+              </div>
+            </v-row>
+            <v-row>
+              <div class="col-12">
+                <ul class="pacote-list-itens" >
+                  <li>
+                    <span><v-icon class="icon-color">mdi-clock</v-icon></span>
+                    1 Dia
+                  </li>
+                  <li>
+                    <span><v-icon class="icon-color">mdi-clock</v-icon></span>
+                    1 Dia
+                  </li>
+                  <li>
+                    <span><v-icon class="icon-color">mdi-clock</v-icon></span>
+                    1 Dia
+                  </li>
+                </ul>
+              </div>
+            </v-row>
+            <v-row>
+              
+            </v-row>
+            <v-row>
+              
+              <div class="col-6 d-flex pacote-preco" style="flex-direction: column; justify-content: center;">
+                <span class="pacote-preco-item">Individual<br><span class="pacote-preco-tipo"><span class="pacote-preco-moeda">R$</span> 2900</span></span>
+                <span class="pacote-preco-item">Casadinha<br><span class="pacote-preco-tipo"><span class="pacote-preco-moeda">R$</span> 2900</span></span>
+              </div>
+              <div class="col-6 d-flex align-center" style="flex-direction: column; justify-content: center;">
+
+                <v-btn
+                 
+                  class="btn-roteiro"
+                  color="color-roteiro"
+                  @click="openRoteiro('<h1>Carolina</h1>')"
+                >
+                  Descrição
+                  <v-icon right>
+                    mdi-palm-tree
+                  </v-icon>
+                </v-btn>
+
+                <v-btn
+               
+                  color="success"
+                  class="btn-roteiro"
+                >
+                  Whatsapp
+                </v-btn>
+              
+              </div>
+            </v-row>
+            
+           </v-card-text>
+
+        </v-card>
+      
+    </v-col>
+    <!-- -->
+    <!---->
+    <v-col md="4">
+      
+        <v-card
+          class="mx-auto"
+          max-width="320"
+        >
+          <v-img
+            height="200"
+            src="https://i.pinimg.com/originals/d9/f1/5e/d9f15e78f0ac37de87d9b95b545ed03d.jpg"
+          >
+          </v-img>
+          <div class="back-pacote-cinza">
+            <v-row>
+              <div class="col-12">
+                <div class="d-flex align-center justify-space-between">
+                  <span class="pacote-data-principal">
+                    <span class="pacote-data-prox">Próxima Data:</span><br>
+                    2 maio
+                  </span>
+                  <v-btn
+                 
+                    outlined
+                    fab
+                    color="teal"
+                    
+                  >
+                    <v-icon>mdi-playlist-plus</v-icon>
+                  </v-btn>
+                </div>
+              </div>
+            </v-row>
+          </div>
+          <v-card-text>
+            <v-row>
+              <div class="col-12">
+                <p class="pacote-p pacote-title">Santo Amaro</p>
+                <p class="pacote-p pacote-sub">Saindo de <span class="pacote-cidade">São Luís</span></p>
+              </div>
+            </v-row>
+            <v-row>
+              <div class="col-12">
+                <ul class="pacote-list-itens" >
+                  <li>
+                    <span><v-icon class="icon-color">mdi-clock</v-icon></span>
+                    1 Dia
+                  </li>
+                  <li>
+                    <span><v-icon class="icon-color">mdi-clock</v-icon></span>
+                    1 Dia
+                  </li>
+                  <li>
+                    <span><v-icon class="icon-color">mdi-clock</v-icon></span>
+                    1 Dia
+                  </li>
+                </ul>
+              </div>
+            </v-row>
+            <v-row>
+              
+            </v-row>
+            <v-row>
+              
+              <div class="col-6 d-flex pacote-preco" style="flex-direction: column; justify-content: center;">
+                <span class="pacote-preco-item">Individual<br><span class="pacote-preco-tipo"><span class="pacote-preco-moeda">R$</span> 2900</span></span>
+                <span class="pacote-preco-item">Casadinha<br><span class="pacote-preco-tipo"><span class="pacote-preco-moeda">R$</span> 2900</span></span>
+              </div>
+              <div class="col-6 d-flex align-center" style="flex-direction: column; justify-content: center;">
+
+                <v-btn
+                 
+                  class="btn-roteiro"
+                  color="color-roteiro"
+                  @click="openRoteiro('<h1>Carolina</h1>')"
+                >
+                  Descrição
+                  <v-icon right>
+                    mdi-palm-tree
+                  </v-icon>
+                </v-btn>
+
+                <v-btn
+               
+                  color="success"
+                  class="btn-roteiro"
+                >
+                  Whatsapp
+                </v-btn>
+              
+              </div>
+            </v-row>
+            
+           </v-card-text>
+
+        </v-card>
+      
+    </v-col>
+    <!-- -->
+    <!---->
+    <v-col md="4">
+      
+        <v-card
+          class="mx-auto"
+          max-width="320"
+        >
+          <v-img
+            height="200"
+            src="https://i.pinimg.com/originals/d9/f1/5e/d9f15e78f0ac37de87d9b95b545ed03d.jpg"
+          >
+          </v-img>
+          <div class="back-pacote-cinza">
+            <v-row>
+              <div class="col-12">
+                <div class="d-flex align-center justify-space-between">
+                  <span class="pacote-data-principal">
+                    <span class="pacote-data-prox">Próxima Data:</span><br>
+                    2 maio
+                  </span>
+                  <v-btn
+                 
+                    outlined
+                    fab
+                    color="teal"
+                    
+                  >
+                    <v-icon>mdi-playlist-plus</v-icon>
+                  </v-btn>
+                </div>
+              </div>
+            </v-row>
+          </div>
+          <v-card-text>
+            <v-row>
+              <div class="col-12">
+                <p class="pacote-p pacote-title">Santo Amaro</p>
+                <p class="pacote-p pacote-sub">Saindo de <span class="pacote-cidade">São Luís</span></p>
+              </div>
+            </v-row>
+            <v-row>
+              <div class="col-12">
+                <ul class="pacote-list-itens" >
+                  <li>
+                    <span><v-icon class="icon-color">mdi-clock</v-icon></span>
+                    1 Dia
+                  </li>
+                  <li>
+                    <span><v-icon class="icon-color">mdi-clock</v-icon></span>
+                    1 Dia
+                  </li>
+                  <li>
+                    <span><v-icon class="icon-color">mdi-clock</v-icon></span>
+                    1 Dia
+                  </li>
+                </ul>
+              </div>
+            </v-row>
+            <v-row>
+              
+            </v-row>
+            <v-row>
+              
+              <div class="col-6 d-flex pacote-preco" style="flex-direction: column; justify-content: center;">
+                <span class="pacote-preco-item">Individual<br><span class="pacote-preco-tipo"><span class="pacote-preco-moeda">R$</span> 2900</span></span>
+                <span class="pacote-preco-item">Casadinha<br><span class="pacote-preco-tipo"><span class="pacote-preco-moeda">R$</span> 2900</span></span>
+              </div>
+              <div class="col-6 d-flex align-center" style="flex-direction: column; justify-content: center;">
+
+                <v-btn
+                 
+                  class="btn-roteiro"
+                  color="color-roteiro"
+                  @click="openRoteiro('<h1>Carolina</h1>')"
+                >
+                  Descrição
+                  <v-icon right>
+                    mdi-palm-tree
+                  </v-icon>
+                </v-btn>
+
+                <v-btn
+               
+                  color="success"
+                  class="btn-roteiro"
+                >
+                  Whatsapp
+                </v-btn>
+              
+              </div>
+            </v-row>
+            
+           </v-card-text>
+
+        </v-card>
+      
+    </v-col>
+    <!-- -->
+    <!---->
+    <v-col md="4">
+      
+        <v-card
+          class="mx-auto"
+          max-width="320"
+        >
+          <v-img
+            height="200"
+            src="https://i.pinimg.com/originals/d9/f1/5e/d9f15e78f0ac37de87d9b95b545ed03d.jpg"
+          >
+          </v-img>
+          <div class="back-pacote-cinza">
+            <v-row>
+              <div class="col-12">
+                <div class="d-flex align-center justify-space-between">
+                  <span class="pacote-data-principal">
+                    <span class="pacote-data-prox">Próxima Data:</span><br>
+                    2 maio
+                  </span>
+                  <v-btn
+                 
+                    outlined
+                    fab
+                    color="teal"
+                    
+                  >
+                    <v-icon>mdi-playlist-plus</v-icon>
+                  </v-btn>
+                </div>
+              </div>
+            </v-row>
+          </div>
+          <v-card-text>
+            <v-row>
+              <div class="col-12">
+                <p class="pacote-p pacote-title">Santo Amaro</p>
+                <p class="pacote-p pacote-sub">Saindo de <span class="pacote-cidade">São Luís</span></p>
+              </div>
+            </v-row>
+            <v-row>
+              <div class="col-12">
+                <ul class="pacote-list-itens" >
+                  <li>
+                    <span><v-icon class="icon-color">mdi-clock</v-icon></span>
+                    1 Dia
+                  </li>
+                  <li>
+                    <span><v-icon class="icon-color">mdi-clock</v-icon></span>
+                    1 Dia
+                  </li>
+                  <li>
+                    <span><v-icon class="icon-color">mdi-clock</v-icon></span>
+                    1 Dia
+                  </li>
+                </ul>
+              </div>
+            </v-row>
+            <v-row>
+              
+            </v-row>
+            <v-row>
+              
+              <div class="col-6 d-flex pacote-preco" style="flex-direction: column; justify-content: center;">
+                <span class="pacote-preco-item">Individual<br><span class="pacote-preco-tipo"><span class="pacote-preco-moeda">R$</span> 2900</span></span>
+                <span class="pacote-preco-item">Casadinha<br><span class="pacote-preco-tipo"><span class="pacote-preco-moeda">R$</span> 2900</span></span>
+              </div>
+              <div class="col-6 d-flex align-center" style="flex-direction: column; justify-content: center;">
+
+                <v-btn
+                 
+                  class="btn-roteiro"
+                  color="color-roteiro"
+                  @click="openRoteiro('<h1>Carolina</h1>')"
+                >
+                  Descrição
+                  <v-icon right>
+                    mdi-palm-tree
+                  </v-icon>
+                </v-btn>
+
+                <v-btn
+               
+                  color="success"
+                  class="btn-roteiro"
+                >
+                  Whatsapp
+                </v-btn>
+              
+              </div>
+            </v-row>
+            
+           </v-card-text>
+
+        </v-card>
+      
+    </v-col>
+    <!-- -->
+    
+
+    
+    <!-- modal -->
+    <v-dialog
+      v-model="dialog"
+      fullscreen
+      hide-overlay
+      transition="dialog-bottom-transition"
+    >
+      <v-card>
+        <v-toolbar
+          dark
+          color="color-roteiro"
+        >
+          <v-btn
+            icon
+            dark
+            @click="dialog = false"
+          >
+            <v-icon>mdi-close</v-icon>
+          </v-btn>
+          <v-toolbar-title>Roteiro</v-toolbar-title>
+        </v-toolbar>
+        <span v-html="roteiro"></span>
+              
+      </v-card>
+    </v-dialog>
+    <!-- fim modal -->
+
   </v-row>
+</v-container>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
-
 export default {
   components: {
-    Logo,
-    VuetifyLogo
-  }
+  },
+  data: () => ({
+      dialog: false,
+      roteiro: ''
+    }),
+    methods: {
+      openRoteiro: function(rot){
+        this.dialog = true
+        this.roteiro = rot
+      }
+    }
 }
 </script>
+<style scoped>
+.pacote-data-principal{
+  font-weight: 700;
+  color: #139e91;
+  font-size: 20px;
+  line-height: 1.3;
+}
+.pacote-data-prox {
+  font-size: 14px;
+  font-weight: 500;
+  color: #a9a9a9;
+}
+.back-pacote-cinza{
+  padding: 11px 16px;
+  font-weight: 700;
+  box-shadow: 0 0 2px rgb(130 189 199);
+  background: #f9f9f9;
+}
+.back-pacote-cinza .v-btn--fab.v-size--default {
+    height: 48px;
+    width: 48px;
+}
+.pacote-list-itens{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-weight: 500;
+}
+.pacote-preco-item{
+  padding: 5px 6px;
+  font-weight: 600;
+  color: rgb(80 79 79 / 60%);
+}
+.pacote-p {
+  margin: 0;
+  padding: 0;
+}
+.pacote-preco {
+  font-size: 15px;
+}
+.pacote-preco-tipo{
+   color: #d88304;
+   font-size: 21px;
+}
+.pacote-title{
+  font-size: 22px;
+  color: #565656;
+  font-weight: 600;
+}
+.pacote-sub{
+  color: #435b71;
+  font-size: 14px;
+  margin-bottom: -15px;
+}
+.btn-roteiro{
+  margin: 5px 0px;
+  min-width: 142px !important;
+}
+span.pacote-preco-moeda {
+  font-size: 17px;
+}
+.pacote-cidade{
+  font-weight: 600;
+}
+.icon-color{
+  color: rgb(179 176 176);
+}
+.pacote-data{
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+  position: absolute;
+  background: #737270;
+  padding: 3px 8px;
+  border-radius: 6px;
+  right: 9px;
+}
+.pacote-data:hover{
+  color: #d98509;
+}
+.color-roteiro {
+  background-color: #139e91 !important;
+  border-color: #139e91 !important;
+  color: #fff !important;
+}
+</style>
