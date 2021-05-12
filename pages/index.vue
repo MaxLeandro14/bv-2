@@ -8,11 +8,21 @@
           class="mx-auto"
           max-width="320"
         >
-          <v-img
-            height="200"
-            src="https://i.pinimg.com/originals/d9/f1/5e/d9f15e78f0ac37de87d9b95b545ed03d.jpg"
+          <v-carousel 
+          :show-arrows="false"
+          hide-delimiter-background
+          delimiter-icon="mdi-minus"
+          height="200"
+          show-arrows-on-hover
           >
-          </v-img>
+              <v-carousel-item
+                src="https://i.pinimg.com/originals/d9/f1/5e/d9f15e78f0ac37de87d9b95b545ed03d.jpg"
+              ></v-carousel-item>
+              <v-carousel-item
+                src="https://viagemeturismo.abril.com.br/wp-content/uploads/2016/12/lencoism16.jpeg?quality=70&strip=info&w=680&h=453&crop=1"
+              ></v-carousel-item>
+          </v-carousel>
+
           <div class="back-pacote-cinza">
             <v-row>
               <div class="col-12">
@@ -108,7 +118,6 @@
           max-width="320"
         >
           <v-carousel 
-          :continuous="false"
           :show-arrows="false"
           hide-delimiter-background
           delimiter-icon="mdi-minus"
@@ -116,7 +125,7 @@
           show-arrows-on-hover
           >
               <v-carousel-item
-                src="https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg"
+                src="https://media-cdn.tripadvisor.com/media/photo-c/2560x500/12/83/56/22/kite-school-and-club.jpg"
               ></v-carousel-item>
               <v-carousel-item
                 src="https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg"
