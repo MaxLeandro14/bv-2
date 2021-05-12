@@ -50,17 +50,18 @@
                   </li>
                   <li>
                     <span><v-icon class="icon-color">mdi-clock</v-icon></span>
-                    1 Dia
+                    Translado ida e volta
                   </li>
                   <li>
                     <span><v-icon class="icon-color">mdi-clock</v-icon></span>
-                    1 Dia
+                    Hospedagem
+                  </li>
+                  <li>
+                    <span><v-icon class="icon-color">mdi-clock</v-icon></span>
+                    Café da manhã
                   </li>
                 </ul>
               </div>
-            </v-row>
-            <v-row>
-              
             </v-row>
             <v-row>
               
@@ -81,7 +82,7 @@
                     mdi-palm-tree
                   </v-icon>
                 </v-btn>
-
+                 
                 <v-btn
                
                   color="success"
@@ -106,11 +107,22 @@
           class="mx-auto"
           max-width="320"
         >
-          <v-img
-            height="200"
-            src="https://i.pinimg.com/originals/d9/f1/5e/d9f15e78f0ac37de87d9b95b545ed03d.jpg"
+          <v-carousel 
+          :continuous="false"
+          :show-arrows="false"
+          hide-delimiter-background
+          delimiter-icon="mdi-minus"
+          height="200"
+          show-arrows-on-hover
           >
-          </v-img>
+              <v-carousel-item
+                src="https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg"
+              ></v-carousel-item>
+              <v-carousel-item
+                src="https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg"
+              ></v-carousel-item>
+          </v-carousel>
+
           <div class="back-pacote-cinza">
             <v-row>
               <div class="col-12">
@@ -171,9 +183,6 @@
             </v-row>
             <v-row>
               
-            </v-row>
-            <v-row>
-              
               <div class="col-6 d-flex pacote-preco" style="flex-direction: column; justify-content: center;">
                 <span class="pacote-preco-item">Quarto Triplo<br><span class="pacote-preco-tipo"><span class="pacote-preco-moeda">R$</span> 2900</span></span>
                 <span class="pacote-preco-item">Quarto Casal<br><span class="pacote-preco-tipo"><span class="pacote-preco-moeda">R$</span> 2900</span></span>
@@ -201,8 +210,7 @@
                 </v-btn>
               
               </div>
-            </v-row>
-            
+            </v-row>            
            </v-card-text>
 
         </v-card>
@@ -653,7 +661,7 @@ export default {
 </script>
 <style scoped>
 .pacote-data-principal{
-  font-weight: 700;
+  font-weight: 800;
   color: #139e91;
   font-size: 20px;
   line-height: 1.3;
@@ -664,7 +672,7 @@ export default {
   color: #a9a9a9;
 }
 .back-pacote-cinza{
-  padding: 11px 16px;
+  padding: 5px 16px;
   font-weight: 700;
   box-shadow: 0 0 2px rgb(130 189 199);
   background: #f9f9f9;
@@ -682,7 +690,7 @@ export default {
 .pacote-preco-item{
   padding: 5px 0px;
   font-weight: 600;
-  color: rgb(80 79 79 / 60%);
+  color: rgb(0 0 0 / 60%);
 }
 .pacote-p {
   margin: 0;
@@ -718,6 +726,7 @@ span.pacote-preco-moeda {
 }
 .icon-color{
   color: rgb(179 176 176);
+  font-size: 20px !important;
 }
 .pacote-data{
   color: #ffffff;
